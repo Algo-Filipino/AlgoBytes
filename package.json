@@ -1,0 +1,25 @@
+{
+  "name": "algobytes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.4"
+  },
+  "description": "",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Algo-Filipino/AlgoBytesWebsite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Algo-Filipino/AlgoBytesWebsite/issues"
+  },
+  "homepage": "https://github.com/Algo-Filipino/AlgoBytesWebsite#readme"
+}

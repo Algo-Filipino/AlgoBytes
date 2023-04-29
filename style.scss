@@ -1,0 +1,188 @@
+@font-face {
+  font-family: poppins-regular;
+  src: url("./fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: poppins-black;
+  src: url("./fonts/Poppins-Black.ttf");
+}
+@font-face {
+  font-family: poppins-thinI;
+  src: url("./fonts/Poppins-ThinItalic.ttf");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: poppins-regular;
+}
+
+.msgUs-btn {
+  padding: 5px 5px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #5271ff;
+  transition: all 1000ms;
+  font-size: 9px;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  outline: 1.5px solid #5271ff;
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+
+  &:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 1px solid #5271ff;
+    box-shadow: 4px 5px 17px -4px #5271ff;
+  }
+  &:hover a {
+    color: white;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #5271ff;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  &:hover::before {
+    width: 250%;
+  }
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.home-section {
+  .col-img {
+    text-align: center;
+
+    img {
+      position: relative;
+      margin-top: 100px;
+      width: 80%;
+    }
+  }
+}
+.home-col-1 {
+  padding: 3rem !important;
+
+  p {
+    font-weight: lighter;
+  }
+  h1 {
+    font-size: 200%;
+    text-align: start;
+    font-weight: 600;
+    line-height: 4.5rem;
+  }
+}
+
+.arrow img {
+  animation-name: arrow-dissolve;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-duration: 2.5s;
+}
+.vector-check {
+  text-align: right;
+  img {
+    width: 20%;
+  }
+}
+
+@keyframes arrow-dissolve {
+  from {
+    opacity: 0.5;
+    transform: translateY(-10px);
+  }
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+//about--us--section
+
+#about {
+  padding: 20px;
+  height: auto;
+  overflow: hidden;
+  background-color: #5271ff;
+  z-index: 1;
+  background: url("") no-repeat center center/cover;
+
+  .heading {
+    display: inline-block;
+    font-family: poppins-black;
+    color: white;
+
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .lead {
+    font-size: 20px;
+    font-family: poppins-thinI;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(247, 247, 247);
+    font-weight: lighter;
+    line-height: 3rem;
+  }
+}
+
+//scroll to top
+
+#scroll-to-top {
+  display: none; /* Hide the button by default */
+  position: fixed; /* Set the button to a fixed position */
+  background: none;
+  border: none;
+  bottom: 50px; /* Set the position of the button from the bottom of the viewport */
+  right: 30px; /* Set the position of the button from the right of the viewport */
+  z-index: 999; /* Set a high z-index to ensure the button is always on top */
+}
+
+/* Set the scroll behavior to smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+[data-aos^="zoom"][data-aos^="zoom"].aos-animate {
+  opacity: 0.5 !important;
+}
+@import "./videos.scss";
+@import "./loader.scss";
+@import "./footer.scss";
+@import "./contacts.scss";
+@import "./blogs.scss";
+@import "./carousels.scss";
+@import "./form.scss";
+@import "./mediaQueries.scss";
+@import "./navbar.scss";
+@import "./node_modules/bootstrap/scss/bootstrap.scss";

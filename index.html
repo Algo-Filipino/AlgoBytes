@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/AB.png" type="webp/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Google font cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="convo.css" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhDTsUSzYOPGACOp3fToBtonFVgZf7FyM&callback=initMap"
+      async
+      defer
+    ></script>
+    <title>AlgoBytes</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="loaders">
+        <div class="square-1 square"></div>
+        <div class="square-2 square"></div>
+      </div>
+    </div>
+    <button id="scroll-to-top">
+      <i
+        class="bi bi-arrow-up-circle-fill scroll-icon"
+        style="font-size: 40px; color: black"
+      ></i>
+    </button>
+    <input type="checkbox" id="checkbox" class="nav-menu" />
+    <label for="checkbox" class="toggle">
+      <div class="bars" id="bar1"></div>
+      <div class="bars" id="bar2"></div>
+      <div class="bars" id="bar3"></div>
+    </label>
+    <header class="mt-3">
+      <div class="logo" style="margin-top: 10px">
+        <img src="./images/logo.png" alt="logo" />
+      </div>
+      <nav class="myNav">
+        <ul class="nav-list">
+          <li><a href="#home" style="margin: 0px">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#facts">BLOGS</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#contact" style="margin-right: 25px">CONTACTS</a></li>
+        </ul>
+      </nav>
+      <button class="msgUs-btn">
+        <a href="mailto:algofilipinoofficers@gmail.com"> Message Us</a>
+
+        <!-- <i class="bi bi-chat-fill"></i> -->
+      </button>
+    </header>
+
+    <!-- home section -->
+    <div class="container-fluid home-section mt-3" id="home">
+      <div class="row g-1">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-sm-12 home-col-1">
+          <p>
+            <span style="color: #5271ff">ALGO</span>
+            <span style="color: red">BYTES</span>
+          </p>
+          <h1>
+            Mga mahahalagang
+            <span style="color: #5271ff">katotohanan</span> tungkol sa
+            Teknolohiya ng Pilipinas.
+          </h1>
+          <div class="vector-check" style="text-align: center">
+            <img src="./images/vector-check.png" alt="vector-check" />
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-12 col-md-6 col-lg-6 col-sm-12 col-xs-12 col-img"
+        >
+          <img src="./images/home-img.png" alt="image" />
+        </div>
+        <div class="arrow mt-5" style="text-align: center; cursor: pointer">
+          <a href="#facts">
+            <img src="./images/arrow-down-vector.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Home Section End-->
+    <!-- fact techs section -->
+
+    <div class="fact-techs mt-5" id="facts">
+      <div class="algoBytes" data-aos="zoom-in">FACT TECHS</div>
+      <p
+        style="
+          position: relative;
+          text-align: center;
+          bottom: 80px;
+          margin-right: -5px;
+          font-family: poppins-black;
+          -webkit-text-stroke: 1px rgb(114, 114, 114);
+          text-stroke: 1px rgb(175, 175, 175);
+          color: white;
+          font-family: poppins-black;
+        "
+      >
+        FACT TECHS
+      </p>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/1.png" data-aos="flip-right" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/2.png" data-aos="flip-right" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/3.png" data-aos="flip-right" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/4.png" data-aos="flip-right" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/5.png" data-aos="flip-right" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/6.png" data-aos="flip-right" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/7.png" data-aos="flip-right" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/8.png" data-aos="flip-right" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/9.png" data-aos="flip-right" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="arrow mt-5" style="text-align: center; cursor: pointer">
+        <a href="#video">
+          <img src="./images/arrow-down-vector.png" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Fact Tech section END-->
+
+    <!-- videos section -->
+    <div class="video" id="video">
+      <div class="video-title" data-aos="zoom-in">ALGOBYTES VIDEOS</div>
+      <p
+        style="
+          position: relative;
+          text-align: center;
+          bottom: 80px;
+          margin-right: -5px;
+          font-family: poppins-black;
+          -webkit-text-stroke: 1px rgb(114, 114, 114);
+          text-stroke: 1px rgb(175, 175, 175);
+          color: white;
+          font-family: poppins-black;
+        "
+      >
+        ALGOBYTES VIDEOS
+      </p>
+
+      <div class="row">
+        <video
+          src="sample.mp4"
+          loop
+          autoplay
+          controls
+          class="col-12 col-lg-7 myVid"
+        ></video>
+        <div class="video-list col-12 col-lg-5">
+          <ul class="lists">
+            <li>
+              <button
+                class="box"
+                data-bs-toggle="popover"
+                data-bs-trigger="focus"
+                data-bs-title="Date: March 13, 2023"
+                data-bs-content="Create digital portfolio using wakelet and applying work on LinkedIn with Mr. Charles Virtucio"
+              >
+                <i class="bi bi-play-circle"></i>
+                Leadership Seminar
+              </button>
+            </li>
+            <li>
+              <button
+                class="box"
+                data-bs-toggle="popover"
+                data-bs-trigger="focus"
+                data-bs-title="Date: March 14, 2023"
+                data-bs-content="Design Workshop Webinar with the speaker Ms. Princess Lyca LIM-IT"
+              >
+                <i class="bi bi-play-circle"></i> Graphic Design Worshop
+              </button>
+            </li>
+            <li>
+              <button
+                class="box"
+                data-bs-toggle="popover"
+                data-bs-trigger="focus"
+                data-bs-title="Date: March 27, 2023"
+                data-bs-content="Open source contribution on Github with Technical support Mr. John Moren Dinela"
+              >
+                <i class="bi bi-play-circle"></i>
+                Open Source Contribution
+              </button>
+            </li>
+            <li>
+              <button
+                class="box"
+                data-bs-toggle="popover"
+                data-bs-trigger="focus"
+                data-bs-title="Date: March 30, 2023"
+                data-bs-content="Empowering womens month with our women guest speakers ."
+              >
+                <i class="bi bi-play-circle"></i> Women's Month Webinar
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="arrow mt-5" style="text-align: center; cursor: pointer">
+        <a href="#about">
+          <img src="./images/arrow-down-vector.png" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <!-- videos end section -->
+    <!--ABOUT SECTION START-->
+
+    <section
+      id="about"
+      class="about"
+      style="background-image: url(./images/aboutus-bg.png)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="heading" data-aos="zoom-in">ABOUT US</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h1
+              style="
+                text-align: center;
+                color: rgb(255, 255, 255);
+                font-size: 30px;
+              "
+            >
+              Mission
+            </h1>
+            <p class="lead">
+              Teravision is a software solution company, which assists
+              businesses in staying agile, innovation-oriented and managing the
+              change in the market effectively. Teravision takes pride in
+              providing simple and effective services.
+            </p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <h1
+              style="
+                text-align: center;
+                color: rgb(255, 255, 255);
+                font-size: 30px;
+              "
+            >
+              Vision
+            </h1>
+            <p class="lead">
+              Our goal is to become the most successful provider of software
+              solutions that improves the world by transforming people's lives.
+              We begin by establishing a supportive workplace culture, putting
+              the needs of the customer first, and giving back to the community
+              and charities.
+            </p>
+          </div>
+          <div class="arrow mt-5" style="text-align: center; cursor: pointer">
+            <a href="#contact">
+              <img src="./images/arrow-down-vector.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--ABOUT SECTION END-->
+
+    <!--CONTACT US SECTION START-->
+
+    <section id="contact">
+      <div class="row">
+        <div id="map"></div>
+        <h2>CONTACT US</h2>
+        <p class="contactHead">
+          <span
+            style="
+              -webkit-text-stroke: 1px rgb(114, 114, 114);
+              text-stroke: 1px rgb(175, 175, 175);
+              color: white;
+              font-family: poppins-black;
+            "
+            >CONTACT US</span
+          >
+        </p>
+
+        <!--Grid column-->
+        <div class="col-lg-6 mb-4 form">
+          <!--Form with header-->
+          <form
+            action="https://formsubmit.co/9147bf8c2e2fdba88c60cbf29a571924"
+            method="POST"
+          >
+            <div class="md-form">
+              <div class="containers" style="width: 100%">
+                <div class="card">
+                  <a class="singup">SUMULAT NG MENSAHE: </a>
+                  <div class="inputBox1">
+                    <input type="text" name="Name" required="required" />
+                    <span class="user">Name</span>
+                  </div>
+                  <div class="inputBox">
+                    <input type="email" name="Email" required="required" />
+                    <span>YOUR EMAIL</span>
+                  </div>
+                  <div class="inputBox">
+                    <textarea
+                      id="form-text"
+                      name="Message"
+                      class="form-control md-textarea"
+                      rows="5"
+                      required="required"
+                    ></textarea>
+                    <span>Message</span>
+                  </div>
+                  <button class="btn-form" type="submit">
+                    <div class="svg-wrapper-1">
+                      <div class="svg-wrapper">
+                        <svg
+                          height="24"
+                          width="24"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path
+                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <span>Send</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="hello"></div>
+        </div>
+        <div class="col-lg-6 mb-4 map">
+          <!--Google map-->
+          <div
+            class="mb-4"
+            id="map-container-google-1"
+            style="height: 400px; width: 100%"
+          >
+            <iframe
+              src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="row text-justify other--contacts">
+            <div class="col-md-4">
+              <i class="bi bi-geo-alt-fill"></i>
+              <a
+                href="https://www.google.com/maps/place/1616+Felix+Huertas+Rd,+Santa+Cruz,+Manila,+Metro+Manila/@14.6133369,120.9819716,17z/data=!3m1!4b1!4m6!3m5!1s0x3397b5fef9cf368d:0xa69ea33530ad56e0!8m2!3d14.6133317!4d120.9845465!16s%2Fg%2F11dzpdf7rb"
+                ><p>1616 Felix Huertas Rd, Santa Cruz, Manila</p></a
+              >
+              <p>Metro Manila</p>
+              <p>Philippines</p>
+            </div>
+
+            <div class="col-md-4">
+              <i class="bi bi-phone-fill"></i>
+              <p>099-518-241-33</p>
+              <p>090-080-0760</p>
+              <p>Mon - Fri, 8:00-22:00</p>
+            </div>
+
+            <div class="col-md-4">
+              <i class="bi bi-envelope-fill"></i>
+              <p>info@algofilipino.com</p>
+              <p>algofilipinoofficers@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--CONTACT US SECTION END-->
+
+    <!--Services Section Start-->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="about secvices-item">
+              <div class="logo">
+                <a href="info@algofilipino.com"
+                  ><img src="images/Algo-logo.png" alt=""
+                /></a>
+                <a href="info@algofilipino.com">info@algofilipino.com</a>
+              </div>
+              <ul>
+                <div class="row pull-left">
+                  <div class="col-md-1 pull-left">
+                    <li style="list-style-type: none">
+                      <a href="#" style="text-decoration: none"
+                        ><i class="bi bi-facebook social-media"></i
+                      ></a>
+                    </li>
+                  </div>
+                  <div class="col-md-1">
+                    <li style="list-style-type: none">
+                      <a href="#" style="text-decoration: none"
+                        ><i class="bi bi-twitter social-media"></i
+                      ></a>
+                    </li>
+                  </div>
+                  <div class="col-md-1">
+                    <li style="list-style-type: none">
+                      <a href="#" style="text-decoration: none"
+                        ><i class="bi bi-behance social-media"></i
+                      ></a>
+                    </li>
+                  </div>
+                  <div class="col-md-1">
+                    <li style="list-style-type: none">
+                      <a href="#" style="text-decoration: none"
+                        ><i class="bi bi-instagram social-media"></i
+                      ></a>
+                    </li>
+                  </div>
+                  <div class="col-md-8"></div>
+                </div>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="services footer-item">
+              <h4>Workshop</h4>
+              <ul>
+                <li style="list-style-type: none">
+                  <a href="#" style="text-decoration: none">Graphic Design</a>
+                </li>
+                <li style="list-style-type: none">
+                  <a href="#" style="text-decoration: none"
+                    >Software Development</a
+                  >
+                </li>
+                <li style="list-style-type: none">
+                  <a href="#" style="text-decoration: none"
+                    >Digital Marketing</a
+                  >
+                </li>
+                <li style="list-style-type: none">
+                  <a href="#" style="text-decoration: none">More</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="community footer-item">
+              <h4>Community</h4>
+              <ul>
+                <li style="list-style-type: none">
+                  <a href="#" style="text-decoration: none">Creatives Team</a>
+                </li>
+                <li style="list-style-type: none">
+                  <a href="#" style="text-decoration: none">Community Team</a>
+                </li>
+                <li style="list-style-type: none">
+                  <a href="#" style="text-decoration: none">Tech Team</a>
+                </li>
+                <li style="list-style-type: none">
+                  <a href="#" style="text-decoration: none">Program Team</a>
+                </li>
+                <li style="list-style-type: none">
+                  <a href="#" style="text-decoration: none">Executive Team</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="subscribe-newsletters section-item">
+              <h4>Subscribe Newsletters</h4>
+              <p>Makakuha ng aming bagong balita at iba pa</p>
+              <form action="#" method="get">
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  pattern="[^ @]*@[^ @]*"
+                  placeholder="Your Email"
+                  required=""
+                />
+                <button type="button" class="btn btn-primary">
+                  <i class="fa fa-paper-plane-o"></i> SUBMIT
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br /><br />
+    <!--Services Section END-->
+    <!--Footer-->
+    <section id="footer">
+      <div class="footer">
+        <div class="row">
+          <div class="col-lg-12">
+            <center>
+              <div class="copyright">
+                <p style="text-align: center; color: white; padding-top: 15px">
+                  Copyright © 2023 Algo Filipino Org., Ltd. All Rights Reserved.
+                  Designed by
+                  <a
+                    style="color: black"
+                    rel="nofollow"
+                    href="https://teravisioncorp.com"
+                    title=""
+                    >Teravision PH</a
+                  >
+                </p>
+              </div>
+            </center>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+      <button id="chat-button" type="button" class="collapsible">
+        Chat with us! &nbsp;
+        <i id="chat-icon" style="color: #fff" class="fas fa-comments"></i>
+      </button>
+      <div class="content">
+        <div class="full-chat-block">
+          <!-- Message Container -->
+          <div class="outer-container">
+            <div class="chat-container">
+              <!-- Messages -->
+              <div id="chatbox">
+                <h5 id="chat-timestamp"></h5>
+                <p id="botStarterMessage" class="botText">
+                  <span>Loading...</span>
+                </p>
+              </div>
+              <!-- User input box -->
+              <div class="chat-bar-input-block">
+                <div id="userInput">
+                  <input
+                    id="textInput"
+                    class="input-box"
+                    type="text"
+                    name="msg"
+                    placeholder="Tap 'Enter' to send a message"
+                  />
+                  <p></p>
+                </div>
+                <div class="chat-bar-icons">
+                  <i
+                    id="chat-icon"
+                    style="color: #333"
+                    class="fa fa-fw fa-paper-plane"
+                    onclick="sendButton()"
+                  ></i>
+                </div>
+              </div>
+              <div id="chat-bar-bottom">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+
+      // CODE FOR THE GOOGLE MAPS API
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 14.6114166, lng: 120.9846216 },
+          zoom: 9,
+        });
+
+        var marker = new google.maps.Marker({
+          position: { lat: 14.6114166, lng: 120.9846216 },
+          map: map,
+          title: "Your Location",
+        });
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
+    <script src="responses.js"></script>
+    <script src="convo.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

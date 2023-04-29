@@ -1,0 +1,116 @@
+header {
+  position: relative;
+  margin: 10px 40px 10px 30px;
+  display: flex;
+  justify-content: space-between;
+
+  nav {
+    margin: 0 auto;
+    z-index: 99;
+    ul {
+      display: flex;
+      margin-top: 20px;
+
+      li {
+        list-style: none;
+
+        a {
+          position: relative;
+          text-decoration: none;
+          margin-left: 40px;
+          font-size: 12px;
+          font-weight: bolder;
+          color: #5271ff;
+
+          &::after {
+            content: "";
+            position: absolute;
+            background-color: #5271ff {
+
+            }
+            width: 0%;
+            height: 2px;
+            left: 0;
+            top: 20px;
+          }
+          &:hover::after {
+            transition: all 0.5s;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  right: 0;
+  display: none;
+}
+/* Change background color when checkbox is checked */
+#checkbox:checked + .toggle ~ header nav {
+  right: 0;
+}
+
+.toggle {
+  position: relative;
+  display: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin: 10px;
+  z-index: 99;
+
+  right: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: 0.5s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: #fe5657;
+  border-radius: 4px;
+}
+
+#bar2 {
+  transition-duration: 0.8s;
+}
+
+#bar1,
+#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: 0.5s;
+  transform: rotate(180deg);
+}
+
+//dinagdag--
