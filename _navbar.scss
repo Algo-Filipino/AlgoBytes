@@ -1,3 +1,10 @@
+.logo img {
+  position: relative;
+  width: 110px;
+  height: 100px;
+  bottom: 30px;
+}
+
 header {
   position: relative;
   margin: 10px 40px 10px 30px;
@@ -18,7 +25,7 @@ header {
           position: relative;
           text-decoration: none;
           margin-left: 40px;
-          font-size: 12px;
+          font-size: 17px;
           font-weight: bolder;
           color: #5271ff;
 
