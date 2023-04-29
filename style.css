@@ -500,7 +500,6 @@ button:focus:before {
 }
 
 .fact-techs {
-  height: 80svh;
   background-image: url("./images/blogBg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -870,6 +869,13 @@ body {
     width: 350px !important;
   }
 }
+.logo img {
+  position: relative;
+  width: 130px;
+  height: 100px;
+  bottom: 20px;
+}
+
 header {
   position: relative;
   margin: 10px 40px 10px 30px;
@@ -891,7 +897,7 @@ header nav ul li a {
   position: relative;
   text-decoration: none;
   margin-left: 40px;
-  font-size: 12px;
+  font-size: 17px;
   font-weight: bolder;
   color: #5271ff;
 }
