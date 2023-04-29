@@ -166,6 +166,10 @@ html {
   opacity: 0.5 !important;
 }
 
+.myVid {
+  padding-left: 30px !important;
+}
+
 .video-title {
   position: relative;
   font-family: poppins-black;
